@@ -3,9 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Professional Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .header {
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .services {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .about {
+            padding: 50px 0;
+        }
+        .portfolio {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .contact {
+            padding: 50px 0;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 <body>
-    My MERN STACK  Application!
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section id="header" class="header">
+        <div class="container">
+            <h1>Welcome to Your Website</h1>
+            <p>Your slogan or a brief description goes here.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Description of your services goes here.</p>
+            <!-- Add your services here -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Description about your company or yourself goes here.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Showcase your work or projects here.</p>
+            <!-- Cards for Products -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Description of Product 1.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#shareModal1">Share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="product2.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 2</h5>
+                            <p class="card-text">Description of Product 2.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#shareModal2">Share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="product3.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">Description of Product 3.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#shareModal3">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Modals -->
+    <!-- Share Modal 1 -->
+    <div class="modal fade" id="shareModal1" tabindex="-1" role="dialog" aria-labelledby="shareModal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shareModal1Label">Share Product 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add share content for Product 1 here -->
+                    Share Product 1 on social media platforms.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal 2 -->
+    <div class="modal fade" id="shareModal2" tabindex="-1" role="dialog" aria-labelledby="shareModal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shareModal2Label">Share Product 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add share content for Product 2 here -->
+                    Share Product 2 on social media platforms.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal 3 -->
+    <div class="modal fade" id="shareModal3" tabindex="-1" role="dialog" aria-labelledby="shareModal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shareModal3Label">Share Product 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add share content for Product 3 here -->
+                    Share Product 3 on social media platforms.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Contact information and a contact form can be placed here.</p>
+            <!-- Add your contact form here -->
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and jQuery (Optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
